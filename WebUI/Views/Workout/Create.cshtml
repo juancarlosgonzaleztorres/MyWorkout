@@ -1,0 +1,59 @@
+﻿@model WebUI.Models.WorkoutModel
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Set</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>Workout</h4>
+        <hr />
+        @Html.ValidationSummary(true)
+        <div class="form-group">
+            @Html.LabelFor(model => model.excercise.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.excercise.Name)
+                @Html.ValidationMessageFor(model => model.excercise.Name)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.reps, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.reps)
+                @Html.ValidationMessageFor(model => model.reps)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.weight, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.weight)
+                @Html.ValidationMessageFor(model => model.weight)
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.startTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.startTime)
+                @Html.ValidationMessageFor(model => model.startTime)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

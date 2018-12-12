@@ -1,0 +1,9 @@
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\bin\Debug\netcoreapp2.0\Generic.deps.json
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\bin\Debug\netcoreapp2.0\Generic.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\bin\Debug\netcoreapp2.0\Generic.pdb
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.AssemblyInfoInputs.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.AssemblyInfo.cs
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netcoreapp2.0\Generic.pdb

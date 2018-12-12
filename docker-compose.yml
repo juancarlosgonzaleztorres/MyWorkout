@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  workout:
+    image: workout
+    build:
+      context: .
+      dockerfile: Workout\Dockerfile
+
+  webapi:
+    image: webapi
+    build:
+      context: .
+      dockerfile: ..\WebAPI\Dockerfile
+

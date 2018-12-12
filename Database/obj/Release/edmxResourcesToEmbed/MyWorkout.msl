@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WorkoutStoreContainer" CdmEntityContainer="MyWorkoutContext">
+    <EntitySetMapping Name="Workouts">
+      <EntityTypeMapping TypeName="IsTypeOf(Workout.Workout)">
+        <MappingFragment StoreEntitySet="Workouts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Sets">
+      <EntityTypeMapping TypeName="IsTypeOf(Workout.Set)">
+        <MappingFragment StoreEntitySet="Sets">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Repetitions" ColumnName="Repetitions" />
+          <ScalarProperty Name="FinishTime" ColumnName="FinishTime" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="StartTime" ColumnName="StartTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Exercises">
+      <EntityTypeMapping TypeName="IsTypeOf(Workout.Exercise)">
+        <MappingFragment StoreEntitySet="Exercises">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="SetExercise" TypeName="Workout.SetExercise" StoreEntitySet="Sets">
+      <EndProperty Name="Exercise">
+        <ScalarProperty Name="Id" ColumnName="Exercise_Id" />
+      </EndProperty>
+      <EndProperty Name="Set">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+    <AssociationSetMapping Name="WorkoutSet" TypeName="Workout.WorkoutSet" StoreEntitySet="Sets">
+      <EndProperty Name="Workout">
+        <ScalarProperty Name="Id" ColumnName="Workout_Id" />
+      </EndProperty>
+      <EndProperty Name="Set">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

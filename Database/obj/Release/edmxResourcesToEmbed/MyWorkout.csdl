@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Workout" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+  <EntityContainer Name="MyWorkoutContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Workouts" EntityType="Workout.Workout" />
+    <EntitySet Name="Sets" EntityType="Workout.Set" />
+    <EntitySet Name="Exercises" EntityType="Workout.Exercise" />
+    <AssociationSet Name="SetExercise" Association="Workout.SetExercise">
+      <End Role="Set" EntitySet="Sets" />
+      <End Role="Exercise" EntitySet="Exercises" />
+    </AssociationSet>
+    <AssociationSet Name="WorkoutSet" Association="Workout.WorkoutSet">
+      <End Role="Workout" EntitySet="Workouts" />
+      <End Role="Set" EntitySet="Sets" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Workout">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <NavigationProperty Name="Sets" Relationship="Workout.WorkoutSet" FromRole="Workout" ToRole="Set" />
+  </EntityType>
+  <EntityType Name="Set">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Repetitions" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="FinishTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Weight" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="StartTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="Exercise" Relationship="Workout.SetExercise" FromRole="Set" ToRole="Exercise" />
+    <NavigationProperty Name="Workout" Relationship="Workout.WorkoutSet" FromRole="Set" ToRole="Workout" />
+  </EntityType>
+  <EntityType Name="Exercise">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" Nullable="false" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Set" Relationship="Workout.SetExercise" FromRole="Exercise" ToRole="Set" />
+  </EntityType>
+  <Association Name="SetExercise">
+    <End Type="Workout.Set" Role="Set" Multiplicity="*" />
+    <End Type="Workout.Exercise" Role="Exercise" Multiplicity="1" />
+  </Association>
+  <Association Name="WorkoutSet">
+    <End Type="Workout.Workout" Role="Workout" Multiplicity="1" />
+    <End Type="Workout.Set" Role="Set" Multiplicity="*" />
+  </Association>
+</Schema>

@@ -1,0 +1,58 @@
+<div class='main-nav'>
+    <div class='navbar navbar-inverse'>
+        <div class='navbar-header'>
+            <button type='button' class='navbar-toggle' data-toggle='collapse' data-target='.navbar-collapse'>
+                <span class='sr-only'>Toggle navigation</span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+                <span class='icon-bar'></span>
+            </button>
+            <a class='navbar-brand' [routerLink]="['/home']">MyWorkout</a>
+        </div>
+        <div class='clearfix'></div>
+        <div class='navbar-collapse collapse'>
+            <ul class='nav navbar-nav'>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/home']">
+                        <span class='glyphicon glyphicon-home'></span> Workouts
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/counter']">
+                        <span class='glyphicon glyphicon-education'></span> Today's workout
+                    </a>
+                </li>
+                <li [routerLinkActive]="['link-active']">
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Excercises
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> History
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> About
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Contact
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Register
+                    </a>
+                </li>
+                <li>
+                    <a [routerLink]="['/fetch-data']">
+                        <span class='glyphicon glyphicon-th-list'></span> Log in
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

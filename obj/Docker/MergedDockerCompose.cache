@@ -1,0 +1,24 @@
+networks:
+  default:
+    external:
+      name: nat
+services:
+  webapi:
+    build:
+      context: C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout
+      dockerfile: ..\WebAPI\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: webapi
+    ports:
+    - 80/tcp
+  workout:
+    build:
+      context: C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout
+      dockerfile: Workout\Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: workout
+    ports:
+    - 80/tcp
+version: '3.0'

@@ -1,0 +1,6 @@
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\bin\Debug\MyWorkout.Core.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\bin\Debug\MyWorkout.Core.pdb
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\obj\Debug\MyWorkout.Core.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\obj\Debug\MyWorkout.Core.pdb
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Core\obj\Debug\Core.csprojResolveAssemblyReference.cache

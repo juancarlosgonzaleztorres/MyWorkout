@@ -1,0 +1,11 @@
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\bin\Release\netcoreapp2.0\Workout.deps.json
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\bin\Release\netcoreapp2.0\Workout.runtimeconfig.json
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\bin\Release\netcoreapp2.0\Workout.runtimeconfig.dev.json
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\bin\Release\netcoreapp2.0\Workout.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\bin\Release\netcoreapp2.0\Workout.pdb
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.csprojResolveAssemblyReference.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.csproj.CoreCompileInputs.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.AssemblyInfoInputs.cache
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.AssemblyInfo.cs
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.dll
+C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Workout\obj\Release\netcoreapp2.0\Workout.pdb
