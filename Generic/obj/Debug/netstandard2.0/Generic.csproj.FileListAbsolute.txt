@@ -7,3 +7,12 @@ C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netstandar
 C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.AssemblyInfo.cs
 C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.dll
 C:\Users\Juan\Source\Workspaces\MyWorkout\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\bin\Debug\netstandard2.0\Generic.deps.json
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\bin\Debug\netstandard2.0\Generic.dll
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\bin\Debug\netstandard2.0\Generic.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.AssemblyInfoInputs.cache
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.AssemblyInfo.cs
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.dll
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.csprojAssemblyReference.cache
