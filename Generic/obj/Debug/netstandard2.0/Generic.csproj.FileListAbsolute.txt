@@ -15,3 +15,4 @@ C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Gener
 C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.AssemblyInfo.cs
 C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.dll
 C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\Generic\obj\Debug\netstandard2.0\Generic.csprojAssemblyReference.cache
