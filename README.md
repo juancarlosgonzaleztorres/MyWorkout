@@ -1,12 +1,7 @@
 # MyWorkout
-<h1>PROBLEM</h1>
-<br>
+<h2>PROBLEM</h2>
 Forgetting previous achieved weigh lift numbers.
-
-<h1>SOLUTION</h1>
-<br>
+<h2>SOLUTION</h2>
 Application for registering workouts and keep improving in the gym without forgetting previous achieved lifts.
-
-<h1>REQUIREMENTS</h1>
-<br>
+<h2>REQUIREMENTS</h2>
 Record repetitions per set for each workout.
