@@ -10,10 +10,10 @@ namespace Core
         
         public Workout()
         {
-            sets = new List<Set>();
+            Sets = new List<Set>();
         }
 
         public int Id { get; set; }
-        public List<Set> sets { get; set; }
+        public List<Set> Sets { get; set; }
     }
 }

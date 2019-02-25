@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Core;
 
-namespace WebUI.Tests
+namespace MyWorkout.BusinessLogic.Tests
 {
     [TestClass]
     public class WorkoutTest
@@ -18,8 +18,8 @@ namespace WebUI.Tests
             set.Weight = 255;
             set.StartTime = DateTime.Now;
             set.FinishTime = DateTime.Now;
-            workout.sets.Add(set);
-            Assert.AreEqual("deadlift", workout.sets[0].Excercise.Name);
+            workout.Sets.Add(set);
+            Assert.AreEqual("deadlift", workout.Sets[0].Excercise.Name);
         }
 
         //Get the total weight lifted (volume?) of the workout
