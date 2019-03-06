@@ -15,7 +15,7 @@ namespace Database
         public int Create(Core.Set set)
         {            
             Set entity = new Set {
-                Workout = new Workout { Id = set.Workout.Id },
+                //Workout = new Workout { Id = set.Workout.Id },
                 StartTime = DateTime.Now,
                 FinishTime = DateTime.Now, Repetitions = "12", Weight="100",
                 Exercise = new Exercise { Id = set.Excercise.Id, Name = "Dumbell" }

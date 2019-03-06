@@ -14,6 +14,5 @@ namespace Core
         public DateTime StartTime { get; set; }
         public DateTime FinishTime { get; set; }
         public int Weight { get; set; }
-        public Workout Workout { get; set; }
     }
 }

@@ -9,6 +9,7 @@ namespace MyWorkout.BusinessLogic.Tests
     {
         Workout workout = new Workout();
         Set set = new Set();
+        WorkoutList workouts;
         public WorkoutTest()
         {
             set.Excercise.Name = "deadlift";
@@ -16,25 +17,14 @@ namespace MyWorkout.BusinessLogic.Tests
             set.Weight = 255;
             set.StartTime = DateTime.Now;
             set.FinishTime = set.StartTime.AddMinutes(1);
-        }
-        //Confirm that an excercise is added to a 
-        //workout in the logic.
-        [TestMethod]
-        public void TestAddExerciseToWorkout()
-        {
-            workout.Sets.Add(set);
-            Assert.AreEqual("deadlift", workout.Sets[0].Excercise.Name);
+            workouts = new WorkoutList();
         }
 
-        //TODO Edit a set
         [TestMethod]
-        public void TestEditSet()
+        public void StartWorkout_CreatesWorkout()
         {
-            workout.Sets.Add(set);
-            workout.Sets[0].Excercise.Name = "Squats";
-            Assert.AreEqual("Squats", workout.Sets[0].Excercise.Name);
+            Workout workout = workouts.Start();
+            Assert.AreEqual(DateTime.Today, workout.StartDate);
         }
-
-        //Get the total weight lifted (volume?) of the workout
     }
 }

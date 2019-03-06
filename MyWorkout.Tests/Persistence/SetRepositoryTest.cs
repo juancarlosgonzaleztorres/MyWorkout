@@ -17,8 +17,8 @@ namespace mvc5Project.Tests
         {            
             WorkoutRepository workoutRepository = new WorkoutRepository();
             Set set = new Set();
-            set.Workout = new Workout();
-            set.Workout.Id = workoutRepository.Create(new Workout());
+            //set.Workout = new Workout();
+            //set.Workout.Id = workoutRepository.Create(new Workout());
             var excercise = new Excercise { Name = "Dumbell press" };
             var excerciseRepository = new ExcerciseRepository();
             set.Excercise = excercise;

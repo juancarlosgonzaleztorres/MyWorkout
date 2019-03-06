@@ -14,7 +14,7 @@ namespace Repository
 
         public int Create(Core.Workout workout)
         {
-            return workoutEntity.Create(workout);            
+            return workoutEntity.Create(workout);
         }
 
         public void Delete(int id)
