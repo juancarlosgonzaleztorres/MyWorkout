@@ -1,0 +1,14 @@
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\WindowsConsole.deps.json
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\WindowsConsole.runtimeconfig.json
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\WindowsConsole.runtimeconfig.dev.json
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\WindowsConsole.dll
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\WindowsConsole.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\MyWorkout.Core.dll
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\bin\Debug\netcoreapp2.1\MyWorkout.Core.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.csprojAssemblyReference.cache
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.csproj.CoreCompileInputs.cache
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.AssemblyInfoInputs.cache
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.AssemblyInfo.cs
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.csproj.CopyComplete
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.dll
+C:\Users\gonza\Documents\GitHub\MyWorkout\ConsoleApp1\obj\Debug\netcoreapp2.1\WindowsConsole.pdb

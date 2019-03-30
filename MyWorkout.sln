@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Database", "Database\Databa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{1BBDEE6A-A30D-4D27-B98A-5F537FB6E14F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUI", "WebUI\WebUI.csproj", "{34895597-20D1-4A68-B5B5-1A20BB116B50}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVC", "WebUI\MVC.csproj", "{34895597-20D1-4A68-B5B5-1A20BB116B50}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "MyWorkout.Tests\Tests.csproj", "{2CC7985F-58AE-469C-8909-0DF3664CDA64}"
 EndProject
@@ -17,7 +17,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic", "Generic\Generic.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Workout", "Workout\Workout.csproj", "{8D76ED14-8F81-43FB-8467-2A6CF454A514}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "angular", "Presentation\angular\angular.csproj", "{90E7B11E-B6C4-421A-B450-A3DA81168C2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Angular", "Presentation\angular\Angular.csproj", "{90E7B11E-B6C4-421A-B450-A3DA81168C2C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInteface", "UserInteface", "{801C3E74-96AB-4762-A838-FC6F0635F25D}"
 EndProject
@@ -27,11 +27,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BusinessLogic", "BusinessLo
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{8FE4908C-EC8C-495A-8D7C-34024FF59313}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{D33550C9-8000-480F-AFEA-D3CE39FDE685}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{D33550C9-8000-480F-AFEA-D3CE39FDE685}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebServices", "WebServices", "{A6A3235C-7416-4DFD-ABC8-290C6E2DD211}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{5D92B588-F8DF-480C-AD6B-1A204F150C67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsConsole", "ConsoleApp1\WindowsConsole.csproj", "{5D92B588-F8DF-480C-AD6B-1A204F150C67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E22B363E-0057-41A4-86D4-A639371E712B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

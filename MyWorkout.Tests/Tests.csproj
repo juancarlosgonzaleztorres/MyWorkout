@@ -118,9 +118,9 @@
       <Project>{037CB28C-6CCA-41EC-972D-33117DB3D79A}</Project>
       <Name>Repository</Name>
     </ProjectReference>
-    <ProjectReference Include="..\WebUI\WebUI.csproj">
+    <ProjectReference Include="..\WebUI\MVC.csproj">
       <Project>{34895597-20d1-4a68-b5b5-1a20bb116b50}</Project>
-      <Name>WebUI</Name>
+      <Name>MVC</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
