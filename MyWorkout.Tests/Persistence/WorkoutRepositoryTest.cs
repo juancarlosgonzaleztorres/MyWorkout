@@ -12,15 +12,15 @@ namespace mvc5Project.Tests
     [TestClass]
     public class WorkoutRepositoryTest
     {
-        [TestMethod]
-        public void WorkoutRepository_CreateFirstWorkout()
-        {
-            WorkoutRepository workoutRepository = new WorkoutRepository();
-            Workout workout = new Workout();           
+        //[TestMethod]
+        //public void WorkoutRepository_CreateFirstWorkout()
+        //{
+        //    WorkoutRepository workoutRepository = new WorkoutRepository();
+        //    Workout workout = new Workout();           
 
-            var index = workoutRepository.Create(workout);
+        //    var index = workoutRepository.Create(workout);
 
-            Assert.IsTrue(index>0);
-        }
+        //    Assert.IsTrue(index>0);
+        //}
     }
 }

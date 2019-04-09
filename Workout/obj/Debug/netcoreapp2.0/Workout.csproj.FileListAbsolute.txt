@@ -19,3 +19,4 @@ C:\Users\gonza\Documents\GitHub\MyWorkout\Workout\obj\Debug\netcoreapp2.0\Workou
 C:\Users\gonza\Documents\GitHub\MyWorkout\Workout\obj\Debug\netcoreapp2.0\Workout.AssemblyInfo.cs
 C:\Users\gonza\Documents\GitHub\MyWorkout\Workout\obj\Debug\netcoreapp2.0\Workout.dll
 C:\Users\gonza\Documents\GitHub\MyWorkout\Workout\obj\Debug\netcoreapp2.0\Workout.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\Workout\obj\Debug\netcoreapp2.0\Workout.csprojAssemblyReference.cache

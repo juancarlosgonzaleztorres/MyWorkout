@@ -19,3 +19,4 @@ C:\Users\gonza\Documents\GitHub\MyWorkout\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.
 C:\Users\gonza\Documents\GitHub\MyWorkout\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.AssemblyInfo.cs
 C:\Users\gonza\Documents\GitHub\MyWorkout\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.dll
 C:\Users\gonza\Documents\GitHub\MyWorkout\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.pdb
+C:\Users\gonza\Documents\GitHub\MyWorkout\WebAPI\obj\Debug\netcoreapp2.0\WebAPI.csprojAssemblyReference.cache
