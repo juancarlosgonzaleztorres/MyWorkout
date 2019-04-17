@@ -1,6 +1,0 @@
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\bin\Debug\MyWorkout.Core.dll
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\bin\Debug\MyWorkout.Core.pdb
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\obj\Debug\Core.csprojAssemblyReference.cache
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\obj\Debug\Core.csproj.CoreCompileInputs.cache
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\obj\Debug\MyWorkout.Core.dll
-C:\Users\gonza\Documents\GitHub\MyWorkout\Core\obj\Debug\MyWorkout.Core.pdb
