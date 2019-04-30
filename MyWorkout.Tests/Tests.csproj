@@ -95,7 +95,6 @@
   <ItemGroup>
     <Compile Include="BusinessLogic\TestSets.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="UserInterface\WebUI\HomeControllerTest.cs" />
     <Compile Include="BusinessLogic\WorkoutTest.cs" />
     <Compile Include="Persistence\SetRepositoryTest.cs" />
     <Compile Include="Persistence\WorkoutRepositoryTest.cs" />
@@ -123,7 +122,9 @@
       <Name>MVC</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="UserInterface\WebUI\" />
+  </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.

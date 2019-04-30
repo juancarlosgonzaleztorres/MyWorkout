@@ -5,17 +5,17 @@ using System.Text;
 
 namespace Core
 {
-    public class WorkoutList
+    public class WorkoutHistory
     {        
         private IWorkoutRepository repository;
-        public WorkoutList()
+        public WorkoutHistory()
         {
             Workouts = new List<Workout>();
         }
         public List<Workout> Workouts
         {   get;  set;  }
 
-        public Workout Start()
+        public Workout StartNewWorkout()
         {
             var workout = new Workout { StartDate = DateTime.Today };
             Workouts.Add(workout);

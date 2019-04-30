@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Core;
+﻿using Core;
+using System;
+using Xunit;
 
 namespace MyWorkout.BusinessLogic.Tests
 {
-    [TestClass]
     public class WorkoutTest
     {
         Workout workout = new Workout();
@@ -21,17 +20,17 @@ namespace MyWorkout.BusinessLogic.Tests
             workout = workoutHistory.StartNewWorkout();
         }
 
-        [TestMethod]
+        [Fact]
         public void StartWorkout_CreatesWorkout()
         {
             
-            Assert.AreEqual(DateTime.Today, workout.StartDate);
+            Assert.Equal(DateTime.Today, workout.StartDate);
         }
 
-        [TestMethod]
+        [Fact]
         public void GetListOfWorkout_GetsListOfWorkouts()
         {
-            Assert.IsTrue(workoutHistory.Workouts.Count == 1);
+            Assert.True(workoutHistory.Workouts.Count == 1);
         }
     }
 }

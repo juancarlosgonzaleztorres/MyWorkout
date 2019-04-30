@@ -1,10 +1,9 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Core;
+﻿using Core;
+using System;
+using Xunit;
 
 namespace MyWorkout.BusinessLogic.Tests
 {
-    [TestClass]
     public class SetsTest
     {
         Workout workout = new Workout();
@@ -19,28 +18,28 @@ namespace MyWorkout.BusinessLogic.Tests
         }
         //Confirm that an excercise is added to a 
         //workout in the logic.
-        [TestMethod]
+        [Fact]
         public void AddingSet_GetsSameSet()
         {
             workout.Sets.Add(set);
-            Assert.AreEqual("deadlift", workout.Sets[0].Excercise.Name);
+            Assert.Equal("deadlift", workout.Sets[0].Excercise.Name);            
         }
 
         //TODO Edit a set
-        [TestMethod]
+        [Fact]
         public void EditSet_GetsEditedSet()
         {
             workout.Sets.Add(set);
             workout.Sets[0].Excercise.Name = "Squats";
-            Assert.AreEqual("Squats", workout.Sets[0].Excercise.Name);
+            Assert.Equal("Squats", workout.Sets[0].Excercise.Name);
         }
 
-        [TestMethod]
+        [Fact]
         public void DeleteSet_DoesntFindSet()
         {
             workout.Sets.Add(set);
             workout.Sets.RemoveAt(0);
-            Assert.AreEqual(0, workout.Sets.Count);
+            Assert.Equal(0, workout.Sets.Count);
         }
     }
 }

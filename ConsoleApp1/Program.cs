@@ -7,8 +7,8 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            WorkoutList workoutList = new WorkoutList();
-            var workout = workoutList.Start();
+            WorkoutHistory workoutList = new WorkoutHistory();
+            var workout = workoutList.StartNewWorkout();
 
             for (int i = 0; i < 4; i++)
             {
