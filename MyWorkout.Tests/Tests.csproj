@@ -109,10 +109,6 @@
     <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{1bbdee6a-a30d-4d27-b98a-5f537fb6e14f}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{037CB28C-6CCA-41EC-972D-33117DB3D79A}</Project>
       <Name>Repository</Name>
@@ -124,6 +120,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="UserInterface\WebUI\" />
+    <Folder Include="WebApi\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

@@ -52,14 +52,6 @@
     <Compile Include="WorkoutRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{1bbdee6a-a30d-4d27-b98a-5f537fb6e14f}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Database\Database.csproj">
-      <Project>{C3FE29C3-73E1-4BB9-BF6F-5FFCAE47F696}</Project>
-      <Name>Database</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Generic\Generic.csproj">
       <Project>{de2d9eb6-9a18-4b14-a8df-ddc30b4a8da1}</Project>
       <Name>Generic</Name>

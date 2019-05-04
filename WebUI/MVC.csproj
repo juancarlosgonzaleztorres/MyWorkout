@@ -289,10 +289,6 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core\Core.csproj">
-      <Project>{1bbdee6a-a30d-4d27-b98a-5f537fb6e14f}</Project>
-      <Name>Core</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Repository\Repository.csproj">
       <Project>{037cb28c-6cca-41ec-972d-33117db3d79a}</Project>
       <Name>Repository</Name>
