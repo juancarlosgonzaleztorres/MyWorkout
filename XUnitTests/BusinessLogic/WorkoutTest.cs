@@ -11,13 +11,14 @@ namespace MyWorkout.BusinessLogic.Tests
         WorkoutHistory workoutHistory;
         public WorkoutTest()
         {
+            workoutHistory = new WorkoutHistory();
+            workout = workoutHistory.StartNewWorkout();
             set.Excercise.Name = "deadlift";
             set.Repetitions = 5;
             set.Weight = 255;
             set.StartTime = DateTime.Now;
             set.FinishTime = set.StartTime.AddMinutes(1);
-            workoutHistory = new WorkoutHistory();
-            workout = workoutHistory.StartNewWorkout();
+            workout.Sets.Add(set);
         }
 
         [Fact]
@@ -31,6 +32,12 @@ namespace MyWorkout.BusinessLogic.Tests
         public void GetListOfWorkout_GetsListOfWorkouts()
         {
             Assert.True(workoutHistory.Workouts.Count == 1);
+        }
+
+        [Fact]
+        public void GetWeightLiftedInWorkout_ReturnsWeight()
+        {
+            Assert.True(workout.TotalWeightLifted == 5*255);
         }
     }
 }
