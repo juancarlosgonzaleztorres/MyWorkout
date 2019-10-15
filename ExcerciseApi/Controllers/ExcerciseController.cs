@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Core;
+using Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ExcerciseApi.Controllers
@@ -11,6 +12,11 @@ namespace ExcerciseApi.Controllers
     [ApiController]
     public class ExcerciseController : ControllerBase
     {
+        ICRUD<Excercise> excerciseRepository;
+        public ExcerciseController(ICRUD<Excercise> excerciseRepository)
+        {
+            this.excerciseRepository = excerciseRepository;
+        }
         // GET api/values
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
@@ -29,6 +35,7 @@ namespace ExcerciseApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Excercise excercise)
         {
+            excerciseRepository.Create(excercise);
             return Ok();
         }
 
