@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\CoreLogic\CoreLogic.csproj" />
+    <ProjectReference Include="..\DotNetCoreRepository2\DotNetCoreRepository2.csproj" />
     <ProjectReference Include="..\Generic\Generic.csproj" />
   </ItemGroup>
 

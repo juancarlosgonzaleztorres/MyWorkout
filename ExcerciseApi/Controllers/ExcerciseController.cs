@@ -12,10 +12,10 @@ namespace ExcerciseApi.Controllers
     [ApiController]
     public class ExcerciseController : ControllerBase
     {
-        ICRUD<Excercise> excerciseRepository;
+        readonly ICRUD<Excercise> _repository;
         public ExcerciseController(ICRUD<Excercise> excerciseRepository)
         {
-            this.excerciseRepository = excerciseRepository;
+            this._repository = excerciseRepository;
         }
         // GET api/values
         [HttpGet]
@@ -26,16 +26,16 @@ namespace ExcerciseApi.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<string> Get(int id)
+        public ActionResult<Excercise> Get(int id)
         {
-            return "value";
+            return  _repository.Read(id);
         }
 
         // POST api/values
         [HttpPost]
         public IActionResult Post([FromBody] Excercise excercise)
         {
-            excerciseRepository.Create(excercise);
+            _repository.Create(excercise);
             return Ok();
         }
 
