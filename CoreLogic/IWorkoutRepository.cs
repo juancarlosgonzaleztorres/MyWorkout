@@ -1,6 +1,8 @@
-﻿namespace Core
+﻿using Generic;
+
+namespace Core
 {
-    public interface IWorkoutRepository:ICrud<Workout>
+    public interface IWorkoutRepository:ICRUD<Workout>
     {
     }
 }

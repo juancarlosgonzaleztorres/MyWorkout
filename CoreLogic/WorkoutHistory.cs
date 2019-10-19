@@ -5,7 +5,7 @@ namespace Core
 {
     public class WorkoutHistory
     {        
-        private IWorkoutRepository repository;
+        private readonly IWorkoutRepository repository;
         public WorkoutHistory()
         {
             Workouts = new List<Workout>();

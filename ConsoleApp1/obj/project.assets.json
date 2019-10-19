@@ -5,11 +5,24 @@
       "CoreLogic/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.0",
+        "dependencies": {
+          "Generic": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/CoreLogic.dll": {}
         },
         "runtime": {
           "bin/placeholder/CoreLogic.dll": {}
+        }
+      },
+      "Generic/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Generic.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Generic.dll": {}
         }
       }
     }
@@ -19,6 +32,11 @@
       "type": "project",
       "path": "../CoreLogic/CoreLogic.csproj",
       "msbuildProject": "../CoreLogic/CoreLogic.csproj"
+    },
+    "Generic/1.0.0": {
+      "type": "project",
+      "path": "../Generic/Generic.csproj",
+      "msbuildProject": "../Generic/Generic.csproj"
     }
   },
   "projectFileDependencyGroups": {
