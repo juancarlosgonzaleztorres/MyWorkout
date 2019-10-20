@@ -35,8 +35,8 @@ namespace ExcerciseApi.Controllers
         [HttpPost]
         public IActionResult Post([FromBody] Excercise excercise)
         {
-            _repository.Create(excercise);
-            return Ok();
+            var id = _repository.Create(excercise);
+            return CreatedAtAction(nameof(Post), new { id });
         }
 
         // PUT api/values/5
