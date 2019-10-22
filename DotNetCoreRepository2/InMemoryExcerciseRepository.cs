@@ -18,9 +18,10 @@ namespace Repository
 
         public int Create(Excercise excercise)
         {
+            return 1;
             //_context.Add(excercise);
             //return _context.SaveChanges();
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void Delete(int id)
