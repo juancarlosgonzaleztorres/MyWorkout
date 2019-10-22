@@ -31,8 +31,9 @@ namespace Repository
 
         public Excercise Read(int id)
         {
+            return new Excercise { Id = 1, Name = "deadlift" };
             //return _context.ExcerciseList.Find(id);
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void Update(int id)
