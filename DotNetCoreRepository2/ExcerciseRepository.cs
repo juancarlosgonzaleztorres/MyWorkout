@@ -22,7 +22,7 @@ namespace Repository
 
         public Excercise Read(int id)
         {
-            throw new NotImplementedException();
+            return new Excercise { Id=1, Name="deadlift" };
         }
 
         public void Update(int id)
