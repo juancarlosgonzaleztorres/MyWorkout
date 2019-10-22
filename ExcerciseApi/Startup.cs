@@ -29,7 +29,7 @@ namespace ExcerciseApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<ICRUD<Excercise>, InMemoryExcerciseRepository>();
-            services.AddControllers();
+            //services.AddControllers();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,14 +47,14 @@ namespace ExcerciseApi
 
             app.UseHttpsRedirection();
 
-            app.UseRouting();
+            //app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapControllers();
-            });
+            //app.UseEndpoints(endpoints =>
+            //{
+            //    endpoints.MapControllers();
+            //});
         }
     }
 }
