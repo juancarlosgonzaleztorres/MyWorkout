@@ -29,9 +29,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTests", "XUnitTests\XU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetCore", "DotNetCore", "{1BB85D55-5449-42D6-8FD2-98F685BC4C0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcerciseApi", "ExcerciseApi\ExcerciseApi.csproj", "{4DA4A3BA-4A2F-4614-B840-B0CC291ED984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcerciseApi", "ExcerciseApi\ExcerciseApi.csproj", "{4DA4A3BA-4A2F-4614-B840-B0CC291ED984}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNetCoreRepository2", "DotNetCoreRepository2\DotNetCoreRepository2.csproj", "{7082CC08-2B18-475B-9FDC-8B137C7410BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreRepository2", "DotNetCoreRepository2\DotNetCoreRepository2.csproj", "{7082CC08-2B18-475B-9FDC-8B137C7410BD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{44BBF58C-81B4-479B-B44A-4245FB36557B}"
+	ProjectSection(SolutionItems) = preProject
+		ToDo.txt = ToDo.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
