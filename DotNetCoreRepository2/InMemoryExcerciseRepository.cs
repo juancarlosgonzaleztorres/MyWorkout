@@ -2,6 +2,7 @@
 using Core;
 using DotNetCoreRepository2;
 using Generic;
+using Microsoft.EntityFrameworkCore;
 
 namespace Repository
 {
@@ -10,18 +11,16 @@ namespace Repository
         private ExcerciseContext _context;
         public InMemoryExcerciseRepository()
         {
-            //var options = new DbContextOptionsBuilder<ExcerciseContext>()
-            //    .UseInMemoryDatabase(databaseName: "ExcerciseList")
-            //    .Options;
-            //_context = new ExcerciseContext(options);
+            var options = new DbContextOptionsBuilder<ExcerciseContext>()
+                .UseInMemoryDatabase(databaseName: "ExcerciseList")
+                .Options;
+            _context = new ExcerciseContext(options);
         }
 
         public int Create(Excercise excercise)
         {
-            return 1;
-            //_context.Add(excercise);
-            //return _context.SaveChanges();
-            //throw new NotImplementedException();
+            _context.Add(excercise);
+            return _context.SaveChanges();
         }
 
         public void Delete(int id)
@@ -31,9 +30,7 @@ namespace Repository
 
         public Excercise Read(int id)
         {
-            return new Excercise { Id = 1, Name = "deadlift" };
-            //return _context.ExcerciseList.Find(id);
-            //throw new NotImplementedException();
+            return _context.ExcerciseList.Find(id);
         }
 
         public void Update(int id)

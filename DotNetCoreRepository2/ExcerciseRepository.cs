@@ -4,7 +4,7 @@ using Generic;
 
 namespace Repository
 {
-    public class ExcerciseRepository:ICRUD<Core.Excercise>
+    public class ExcerciseRepository:ICRUD<Excercise>
     {
         public ExcerciseRepository()
         {
