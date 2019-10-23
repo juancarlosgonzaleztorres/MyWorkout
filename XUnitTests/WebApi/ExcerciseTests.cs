@@ -18,13 +18,14 @@ namespace XUnitTests.WebApi
         public ExcerciseTests()
         {
             var mockRepository = new Mock<ICRUD<Excercise>>();
+            mockRepository.Setup(r => r.Create(It.IsAny<Excercise>())).Returns(StatusCodes.Status200OK);
             excerciseController = new ExcerciseController(mockRepository.Object);
         }
 
         [Fact]
         public void CreateExcercise_returnsOKAndExcercise()
         {
-            Assert.Equal(StatusCodes.Status200OK.ToString(), ((StatusCodeResult)excerciseController.Post(new Excercise { Name = "deadlift", Id = 1 })).StatusCode.ToString());
+            Assert.Equal(StatusCodes.Status201Created.ToString(), ((CreatedAtActionResult)excerciseController.Post(new Excercise { Name = "deadlift", Id = 1 })).StatusCode.ToString());
         }
 
 
