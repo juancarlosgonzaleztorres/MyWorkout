@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Reflection;
 using Core;
 using DotNetCoreRepository2;
 using Generic;
@@ -19,8 +20,19 @@ namespace Repository
 
         public int Create(Excercise excercise)
         {
-            _context.Add(excercise);
-            return _context.SaveChanges();
+            try
+            {
+                if (excercise!= null && Read(excercise.Id) is null)
+                {
+                    _context.Add(excercise);                    
+                }
+                return _context.SaveChanges();
+            }
+            catch
+            {
+                throw new Exception(MethodBase.GetCurrentMethod().Name);
+            }
+            
         }
 
         public void Delete(int id)
