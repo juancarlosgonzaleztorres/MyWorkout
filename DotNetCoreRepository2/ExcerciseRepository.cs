@@ -1,18 +1,34 @@
-﻿using System;
-using Core;
+﻿using Core;
 using Generic;
+using Microsoft.EntityFrameworkCore;
+using System;
+using System.Reflection;
 
 namespace Repository
 {
     public class ExcerciseRepository:ICRUD<Excercise>
     {
-        public ExcerciseRepository()
+        DbContext context;
+        public ExcerciseRepository(DbContext context)
         {
+            this.context = context;
         }
 
         public int Create(Excercise excercise)
         {
-            throw new NotImplementedException();
+            try
+            {
+                if (excercise != null && Read(excercise.Id) is null)
+                {
+                    context.Add(excercise);
+                }
+                return context.SaveChanges();
+            }
+            catch
+            {
+                throw new Exception(MethodBase.GetCurrentMethod().Name);
+            }
+
         }
 
         public void Delete(int id)
@@ -22,7 +38,7 @@ namespace Repository
 
         public Excercise Read(int id)
         {
-            return new Excercise { Id=1, Name="deadlift" };
+            return context.Find<Excercise>(id);
         }
 
         public void Update(int id)
