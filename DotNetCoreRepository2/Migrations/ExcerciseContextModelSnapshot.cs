@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DotNetCoreRepository2.Migrations
 {
-    [DbContext(typeof(ExcerciseContext))]
+    [DbContext(typeof(EntityFrameworkSQLiteExcerciseContext))]
     partial class ExcerciseContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

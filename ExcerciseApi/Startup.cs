@@ -1,19 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Amazon.DynamoDBv2;
 using Core;
 using DotNetCoreRepository2;
 using Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 using Repository;
 
 namespace ExcerciseApi
@@ -30,9 +24,10 @@ namespace ExcerciseApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<DbContext, ExcerciseContext>();
+            services.AddSingleton<DbContext, EntityFrameworkSQLiteExcerciseContext>();
             services.AddSingleton<ICRUD<Excercise>, ExcerciseRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddAWSService<IAmazonDynamoDB>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

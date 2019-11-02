@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DotNetCoreRepository2
 {
-    public class ExcerciseContext : DbContext
+    public class EntityFrameworkSQLiteExcerciseContext : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
            => options.UseSqlite("Data Source=excercises.db");

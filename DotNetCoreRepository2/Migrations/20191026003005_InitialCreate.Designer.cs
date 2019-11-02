@@ -7,7 +7,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace DotNetCoreRepository2.Migrations
 {
-    [DbContext(typeof(ExcerciseContext))]
+    [DbContext(typeof(EntityFrameworkSQLiteExcerciseContext))]
     [Migration("20191026003005_InitialCreate")]
     partial class InitialCreate
     {
