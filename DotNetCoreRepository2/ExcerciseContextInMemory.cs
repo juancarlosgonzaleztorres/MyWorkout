@@ -3,12 +3,12 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DotNetCoreRepository2
 {
-    public class InMemoryExcerciseContext:DbContext
+    public class ExcerciseContextInMemory:DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
            => options.UseInMemoryDatabase(databaseName: "ExcerciseList");
 
-        public InMemoryExcerciseContext(DbContextOptions<InMemoryExcerciseContext> options):base(options)
+        public ExcerciseContextInMemory(DbContextOptions<ExcerciseContextInMemory> options):base(options)
         {
         }
 
