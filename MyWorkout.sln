@@ -38,6 +38,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{44BBF58C-8
 		ToDo.txt = ToDo.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spikes", "Spikes", "{F6F6904F-BE68-4819-900E-41B4CF20D6E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dynamoDBConnection", "dynamoDBConnection\dynamoDBConnection.csproj", "{9173650E-3232-4D2A-966C-5FA77F580BDE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +76,10 @@ Global
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9173650E-3232-4D2A-966C-5FA77F580BDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9173650E-3232-4D2A-966C-5FA77F580BDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9173650E-3232-4D2A-966C-5FA77F580BDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9173650E-3232-4D2A-966C-5FA77F580BDE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -86,6 +94,7 @@ Global
 		{1BB85D55-5449-42D6-8FD2-98F685BC4C0A} = {3B246335-08C2-41B1-AB2C-B41DC53CB604}
 		{4DA4A3BA-4A2F-4614-B840-B0CC291ED984} = {A6A3235C-7416-4DFD-ABC8-290C6E2DD211}
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD} = {8FE4908C-EC8C-495A-8D7C-34024FF59313}
+		{9173650E-3232-4D2A-966C-5FA77F580BDE} = {F6F6904F-BE68-4819-900E-41B4CF20D6E4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05623C45-5C9C-4F58-885A-869C9108B299}

@@ -1,1 +1,3 @@
+Change to dynamoDb local pointing to docker instance
+When deploying I need to set up the cloud dynamodb aws service
 Change excercise repository to entity framework core.
