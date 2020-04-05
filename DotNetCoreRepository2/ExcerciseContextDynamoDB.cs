@@ -1,6 +1,8 @@
 ﻿using Amazon.DynamoDBv2;
 using Amazon.DynamoDBv2.DataModel;
+using Amazon.DynamoDBv2.DocumentModel;
 using Amazon.DynamoDBv2.Model;
+using Amazon.Runtime;
 using Core;
 using Generic;
 using Microsoft.EntityFrameworkCore;
@@ -23,11 +25,9 @@ namespace DotNetCoreRepository2
         {
             var dynamoDBConfig = new AmazonDynamoDBConfig();
             dynamoDBConfig.ServiceURL = "http://localhost:8000/";
-            var client = new AmazonDynamoDBClient("AKIAULJMDYAQYD2RLBC4", "cJziNLHJj3cYCsiMf2f6MrPxdA3GbxrBobjBBO7g", dynamoDBConfig);
-            
-            //context = new DynamoDBContext(client);
+            var client = new AmazonDynamoDBClient(dynamoDBConfig);
+
             var tables = await client.ListTablesAsync();
-            //var tables = client.ListTablesAsync().Result;
             var currentTables = tables.TableNames;
             if (!currentTables.Contains(Excercises))
             {
@@ -39,12 +39,11 @@ namespace DotNetCoreRepository2
                         new AttributeDefinition
                         {
                           AttributeName = "Id",
-                          // "S" = string, "N" = number, and so on.
                           AttributeType = "N"
                         },
                         new AttributeDefinition
                         {
-                          AttributeName = "Type",
+                          AttributeName = "Name",
                           AttributeType = "S"
                         }
                       },
@@ -53,12 +52,11 @@ namespace DotNetCoreRepository2
                     new KeySchemaElement
                     {
                       AttributeName = "Id",
-                      // "HASH" = hash key, "RANGE" = range key.
                       KeyType = "HASH"
                     },
                     new KeySchemaElement
                     {
-                      AttributeName = "Type",
+                      AttributeName = "Name",
                       KeyType = "RANGE"
                     },
                   },
@@ -69,10 +67,14 @@ namespace DotNetCoreRepository2
                     },
                 };
                 
-                var response = client.CreateTableAsync(request,new System.Threading.CancellationToken());
+                var response = await client.CreateTableAsync(request,new System.Threading.CancellationToken());
             }
 
-            context.SaveAsync(item);
+            Table excerciseCatalog = Table.LoadTable(client, Excercises);
+            var excercise = new Document();
+            excercise["Id"] = item.Id;
+            excercise["Name"] = item.Name;
+            var excerciseEntry = await excerciseCatalog.PutItemAsync(excercise);
             return 1;
         }
 
