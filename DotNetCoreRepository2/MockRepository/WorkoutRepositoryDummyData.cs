@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    public class MockUpSetListRepository
+    public class WorkoutRepositoryDummyData
     {
         public List<Set> GetSetsByWorkoutId(int id)
         {

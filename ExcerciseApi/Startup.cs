@@ -1,6 +1,7 @@
 ﻿using Amazon.DynamoDBv2;
 using Core;
 using DotNetCoreRepository2;
+using DotNetCoreRepository2.MockRepository;
 using Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -25,7 +26,8 @@ namespace ExcerciseApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<IAmazonDynamoDB, AmazonDynamoDBClient>();
-            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDynamoDB>();
+            //services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDynamoDB>();
+            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDummyData>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAWSService<IAmazonDynamoDB>();
         }
