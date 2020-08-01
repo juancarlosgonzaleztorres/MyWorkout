@@ -4,7 +4,7 @@
     ".NETCoreApp,Version=v3.0": {
       "CoreLogic/1.0.0": {
         "type": "project",
-        "framework": ".NETCoreApp,Version=v3.0",
+        "framework": ".NETCoreApp,Version=v2.2",
         "dependencies": {
           "Generic": "1.0.0"
         },
