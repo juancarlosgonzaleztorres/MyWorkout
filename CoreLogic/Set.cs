@@ -2,7 +2,7 @@
 
 namespace Core
 {
-    public class Set
+    public class Set : ISet
     {
         public Set()
         {
