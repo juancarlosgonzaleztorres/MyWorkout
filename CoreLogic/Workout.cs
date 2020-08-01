@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Core
 {
-    public class Workout
+    public class Workout : IWorkout
     {
         public int TotalWeightLifted
         {
@@ -24,6 +24,6 @@ namespace Core
         public Workout()
         {
             Sets = new List<Set>();
-        }        
+        }
     }
 }
