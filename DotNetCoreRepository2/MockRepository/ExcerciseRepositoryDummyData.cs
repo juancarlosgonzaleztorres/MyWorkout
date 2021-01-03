@@ -25,6 +25,22 @@ namespace DotNetCoreRepository2.MockRepository
             };
         }
 
+        public List<Core.Excercise> Read()
+        {
+            return new List<Core.Excercise> {
+            new Core.Excercise
+            {
+                Name = "deadlift",
+                Id = 1
+            },
+            new Core.Excercise
+            {
+                Name = "Romanian deadlift",
+                Id = 2
+            } 
+            } ;
+        }
+
         public void Update(int id)
         {
         }

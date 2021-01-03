@@ -11,5 +11,8 @@ export class ExcerciseComponent implements OnInit {
 
   ngOnInit() {
   }
-
+  saveExcercise()
+  {
+    
+  }
 }

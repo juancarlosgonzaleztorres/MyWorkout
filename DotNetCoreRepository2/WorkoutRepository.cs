@@ -1,9 +1,11 @@
-﻿using Generic;
+﻿using Core;
+using Generic;
 using System;
+using System.Collections.Generic;
 
 namespace Repository
 {
-    public class WorkoutRepository:ICRUD<Core.Workout>
+    public class WorkoutRepository : ICRUD<Core.Workout>
     {
         public WorkoutRepository()
         {
@@ -20,6 +22,11 @@ namespace Repository
         }
 
         public Core.Workout Read(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<Workout> Read()
         {
             throw new NotImplementedException();
         }

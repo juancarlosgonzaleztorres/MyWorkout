@@ -102,5 +102,10 @@ namespace DotNetCoreRepository2
         {
             throw new System.NotImplementedException();
         }
+
+        public List<Core.Excercise> Read()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

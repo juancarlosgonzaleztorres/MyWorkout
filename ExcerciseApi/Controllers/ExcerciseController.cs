@@ -19,9 +19,9 @@ namespace ExcerciseApi.Controllers
         }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<IEnumerable<Excercise>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return _repository.Read();
         }
 
         // GET api/values/5

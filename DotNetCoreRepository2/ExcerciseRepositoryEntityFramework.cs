@@ -2,6 +2,7 @@
 using Generic;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Collections.Generic;
 using System.Reflection;
 
 namespace Repository
@@ -39,6 +40,11 @@ namespace Repository
         public Excercise Read(int id)
         {
             return context.Find<Excercise>(id);
+        }
+
+        public List<Excercise> Read()
+        {
+            return context.Set<Excercise>().ToListAsync().Result;
         }
 
         public void Update(int id)
