@@ -88,7 +88,7 @@ namespace DotNetCoreRepository2
             throw new System.NotImplementedException();
         }
 
-        public void Update(int id)
+        public void Update(Excercise excercise)
         {
             throw new System.NotImplementedException();
         }
@@ -104,6 +104,11 @@ namespace DotNetCoreRepository2
         }
 
         public List<Core.Excercise> Read()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Update(Core.Excercise item)
         {
             throw new System.NotImplementedException();
         }

@@ -44,5 +44,10 @@ namespace DotNetCoreRepository2.MockRepository
         public void Update(int id)
         {
         }
+
+        public void Update(Core.Excercise item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

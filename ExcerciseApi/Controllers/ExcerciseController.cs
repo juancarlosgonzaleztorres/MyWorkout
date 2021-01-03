@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Core;
 using Generic;
 using Microsoft.AspNetCore.Mvc;
@@ -41,14 +38,16 @@ namespace ExcerciseApi.Controllers
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public void Put([FromBody] Excercise excercise)
         {
+            _repository.Update(excercise);
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _repository.Delete(id);
         }
     }
 }

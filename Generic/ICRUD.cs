@@ -7,7 +7,7 @@ namespace Generic
         int Create(T item);
         T Read(int id);
         List<T> Read();
-        void Update(int id);
+        void Update(T item);
         void Delete(int id);
     }
 }

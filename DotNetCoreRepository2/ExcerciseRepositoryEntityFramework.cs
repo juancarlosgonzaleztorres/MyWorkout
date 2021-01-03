@@ -7,7 +7,7 @@ using System.Reflection;
 
 namespace Repository
 {
-    public class ExcerciseRepository:ICRUD<Excercise>
+    public class ExcerciseRepository : ICRUD<Excercise>
     {
         DbContext context;
         public ExcerciseRepository(DbContext context)
@@ -48,6 +48,11 @@ namespace Repository
         }
 
         public void Update(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Excercise item)
         {
             throw new NotImplementedException();
         }

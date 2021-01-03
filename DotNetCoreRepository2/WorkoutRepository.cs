@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 namespace Repository
 {
-    public class WorkoutRepository : ICRUD<Core.Workout>
+    public class WorkoutRepository : ICRUD<Workout>
     {
         public WorkoutRepository()
         {
@@ -32,6 +32,11 @@ namespace Repository
         }
 
         public void Update(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Update(Workout item)
         {
             throw new NotImplementedException();
         }

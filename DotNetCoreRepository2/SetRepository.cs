@@ -35,5 +35,10 @@ namespace Repository
         {
             throw new NotImplementedException();
         }
+
+        public void Update(Set item)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
