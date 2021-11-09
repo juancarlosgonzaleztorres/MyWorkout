@@ -6,7 +6,7 @@ using System.Text;
 namespace DotNetCoreRepository2.MockRepository
 {
     public class ExcerciseRepositoryDummyData : ICRUD<Core.Excercise>
-    {        
+    {
         public int Create(Core.Excercise item)
         {
             return 1;

@@ -25,11 +25,11 @@ namespace ExcerciseApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddSingleton<IAmazonDynamoDB, AmazonDynamoDBClient>();
-            //services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDynamoDB>();
-            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDummyData>();
+            services.AddSingleton<DbContext, EntityFrameworkSQLiteExcerciseContext>();
+            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAWSService<IAmazonDynamoDB>();
+            //services.AddAWSService<IAmazonDynamoDB>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
