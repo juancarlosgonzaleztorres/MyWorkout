@@ -343,3 +343,9 @@ healthchecksdb
 
 # Backup folder for Package Reference Convert tool in Visual Studio 2017
 MigrationBackup/
+/Generic/obj/project.assets.json
+/Generic/obj/Generic.csproj.nuget.g.targets
+/Generic/obj/Generic.csproj.nuget.g.props
+/ConsoleApp1/obj/WindowsConsole.csproj.nuget.g.targets
+/ConsoleApp1/obj/WindowsConsole.csproj.nuget.g.props
+/ConsoleApp1/obj/project.assets.json
