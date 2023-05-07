@@ -22,6 +22,7 @@ namespace ConsoleApp1
                 Console.WriteLine("Excercise:{0}, Weight:{1}, Reps:{2}", set.Excercise.Name, set.Weight, set.Repetitions);
             }
 
+            Console.WriteLine("total weight lifted in workout: {0} lbs", workout.TotalWeightLifted);
             Console.ReadLine();
         }
     }
