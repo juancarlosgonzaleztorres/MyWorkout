@@ -13,7 +13,7 @@ namespace Core
         public List<Workout> Workouts
         { get; set; }
 
-        public Workout StartNewWorkout()
+        public IWorkout StartNewWorkout()
         {
             var workout = new Workout { StartDate = DateTime.Today };
             Workouts.Add(workout);

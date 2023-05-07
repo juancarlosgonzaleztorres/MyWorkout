@@ -4,7 +4,7 @@ namespace Core
 {
     public interface ISet
     {
-        Excercise Excercise { get; set; }
+        IExcercise Excercise { get; set; }
         DateTime FinishTime { get; set; }
         int Id { get; set; }
         int Repetitions { get; set; }

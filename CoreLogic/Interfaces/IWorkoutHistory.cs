@@ -6,6 +6,6 @@ namespace Core
     {
         List<Workout> Workouts { get; set; }
 
-        Workout StartNewWorkout();
+        IWorkout StartNewWorkout();
     }
 }

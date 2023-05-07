@@ -10,7 +10,7 @@ namespace Core
         }
         public int Id { get; set; }
         public int Repetitions { get; set; }
-        public Excercise Excercise { get; set; }
+        public IExcercise Excercise { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime FinishTime { get; set; }
         public int Weight { get; set; }

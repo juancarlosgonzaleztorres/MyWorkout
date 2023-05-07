@@ -6,7 +6,7 @@ namespace MyWorkout.BusinessLogic.Tests
 {
     public class WorkoutTest
     {
-        Workout workout = new Workout();
+        IWorkout workout = new Workout();
         Set set = new Set();
         WorkoutHistory workoutHistory;
         public WorkoutTest()

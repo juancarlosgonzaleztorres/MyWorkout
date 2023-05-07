@@ -20,10 +20,10 @@ namespace Core
 
         public DateTime StartDate { get; set; }
         public int Id { get; set; }
-        public List<Set> Sets { get; set; }
+        public List<ISet> Sets { get; set; }
         public Workout()
         {
-            Sets = new List<Set>();
+            Sets = new List<ISet>();
         }
     }
 }
