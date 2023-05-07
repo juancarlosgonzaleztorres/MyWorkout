@@ -7,38 +7,38 @@ namespace ExcerciseApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class ExcerciseController : ControllerBase
+    public class ExcercisesController : ControllerBase
     {
         readonly ICRUD<Excercise> _repository;
-        public ExcerciseController(ICRUD<Excercise> excerciseRepository)
+        public ExcercisesController(ICRUD<Excercise> excerciseRepository)
         {
             this._repository = excerciseRepository;
         }
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<Excercise>> Get()
+        public ActionResult<IEnumerable<Excercise>> GetAll()
         {
             return _repository.Read();
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public ActionResult<Excercise> Get(int id)
+        public ActionResult<Excercise> GetById(int id)
         {
             return  _repository.Read(id);
         }
 
         // POST api/values
         [HttpPost]
-        public IActionResult Post([FromBody] Excercise excercise)
+        public IActionResult Create([FromBody] Excercise excercise)
         {
             var id = _repository.Create(excercise);
-            return CreatedAtAction(nameof(Post), new { id });
+            return CreatedAtAction(nameof(Create), new { id });
         }
 
         // PUT api/values/5
-        [HttpPut("{id}")]
-        public void Put([FromBody] Excercise excercise)
+        [HttpPut]
+        public void Update([FromBody] Excercise excercise)
         {
             _repository.Update(excercise);
         }

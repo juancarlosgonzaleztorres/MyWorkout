@@ -1,0 +1,82 @@
+{
+	"info": {
+		"_postman_id": "7c7c2e99-beeb-46e8-ae59-41da53b4545b",
+		"name": "@Personal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "myWorkout",
+			"item": [
+				{
+					"name": "Create Excercise",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"Id\":4,\n\t\"Name\":\"romanian deadlift\"\n}"
+						},
+						"url": {
+							"raw": "{{excerciseApi}}/api/excercise/",
+							"host": [
+								"{{excerciseApi}}"
+							],
+							"path": [
+								"api",
+								"excercise",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Excercise",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{excerciseApi}}/api/excercise/",
+							"host": [
+								"{{excerciseApi}}"
+							],
+							"path": [
+								"api",
+								"excercise",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "{{excerciseApi}}/api/excercise/1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{excerciseApi}}/api/excercise/1",
+							"host": [
+								"{{excerciseApi}}"
+							],
+							"path": [
+								"api",
+								"excercise",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

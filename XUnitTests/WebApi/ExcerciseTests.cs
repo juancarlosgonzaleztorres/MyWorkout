@@ -14,12 +14,12 @@ namespace XUnitTests.WebApi
 {
     public class ExcerciseTests
     {
-        private ExcerciseController excerciseController;
+        private ExcercisesController excerciseController;
         public ExcerciseTests()
         {
             var mockRepository = new Mock<ICRUD<Excercise>>();
             mockRepository.Setup(r => r.Create(It.IsAny<Excercise>())).Returns(StatusCodes.Status200OK);
-            excerciseController = new ExcerciseController(mockRepository.Object);
+            excerciseController = new ExcercisesController(mockRepository.Object);
         }
 
         [Fact]

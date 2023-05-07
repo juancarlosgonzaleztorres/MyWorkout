@@ -25,8 +25,12 @@ namespace ExcerciseApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //Test Excercise API with Entity Framework
             services.AddSingleton<DbContext, EntityFrameworkSQLiteExcerciseContext>();
-            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepository>();
+            //services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepository>();
+            
+            //Test Excercise API in isolation
+            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDummyData>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAWSService<IAmazonDynamoDB>();
             //services.AddAWSService<IAmazonDynamoDB>();
