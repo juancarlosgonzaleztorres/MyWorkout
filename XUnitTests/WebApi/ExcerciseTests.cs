@@ -25,7 +25,7 @@ namespace XUnitTests.WebApi
         [Fact]
         public void CreateExcercise_returnsOKAndExcercise()
         {
-            Assert.Equal(StatusCodes.Status201Created.ToString(), ((CreatedAtActionResult)excerciseController.Post(new Excercise { Name = "deadlift", Id = 1 })).StatusCode.ToString());
+            Assert.Equal(StatusCodes.Status201Created.ToString(), ((CreatedAtActionResult)excerciseController.Create(new Excercise { Name = "deadlift", Id = 1 })).StatusCode.ToString());
         }
 
 
