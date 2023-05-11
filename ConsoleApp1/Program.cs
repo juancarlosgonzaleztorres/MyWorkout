@@ -7,6 +7,31 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
+            int choice;
+            Console.WriteLine("MyWorkout");
+            do
+            {
+                Console.WriteLine("Enter # option\n" +
+                    "1) Enter workout\n" +
+                    "2) Demo entering workout\n" +
+                    "3) Exit");
+                choice = int.Parse(Console.ReadLine());
+                switch (choice)
+                {
+                    case 1:
+                        break;
+                    case 2:
+                        demoWorkout();
+                        break;
+                    default:
+                        break;
+                }
+                
+            } while (choice !=3 );
+        }
+
+        public static void demoWorkout()
+        {
             WorkoutHistory workoutList = new WorkoutHistory();
             var workout = workoutList.StartNewWorkout();
 
@@ -18,7 +43,7 @@ namespace ConsoleApp1
             Console.WriteLine("Automatically entered workout");
 
             foreach (var set in workoutList.Workouts[0].Sets)
-            {                
+            {
                 Console.WriteLine("Excercise:{0}, Weight:{1}, Reps:{2}", set.Excercise.Name, set.Weight, set.Repetitions);
             }
 
