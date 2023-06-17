@@ -5,7 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 
-namespace Repository
+namespace DotNetCoreRepository2.Excercise
 {
     public class ExcerciseRepository : ICRUD<Excercise>
     {

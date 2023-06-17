@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace DotNetCoreRepository2
+namespace DotNetCoreRepository2.Excercise
 {
     [DynamoDBTable("Excercise")]
     public class Excercise

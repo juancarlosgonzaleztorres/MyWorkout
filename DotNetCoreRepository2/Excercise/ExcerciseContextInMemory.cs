@@ -1,14 +1,14 @@
 ﻿using Core;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotNetCoreRepository2
+namespace DotNetCoreRepository2.Excercise
 {
-    public class ExcerciseContextInMemory:DbContext
+    public class ExcerciseContextInMemory : DbContext
     {
         protected override void OnConfiguring(DbContextOptionsBuilder options)
            => options.UseInMemoryDatabase(databaseName: "ExcerciseList");
 
-        public ExcerciseContextInMemory(DbContextOptions<ExcerciseContextInMemory> options):base(options)
+        public ExcerciseContextInMemory(DbContextOptions<ExcerciseContextInMemory> options) : base(options)
         {
         }
 

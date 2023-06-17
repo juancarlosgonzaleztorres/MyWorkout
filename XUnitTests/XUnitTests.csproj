@@ -21,7 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\BusinessLogic\CoreLogic\CoreLogic.csproj" />
     <ProjectReference Include="..\BusinessLogic\Generic\Generic.csproj" />
-    <ProjectReference Include="..\ExcerciseApi\ExcerciseApi.csproj" />
+    <ProjectReference Include="..\ExcerciseApi\MyWorkoutAPI.csproj" />
     <ProjectReference Include="..\Generic\Generic.csproj" />
   </ItemGroup>
 

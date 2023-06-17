@@ -1,6 +1,6 @@
 ﻿using Amazon.DynamoDBv2;
 using Core;
-using DotNetCoreRepository2;
+using DotNetCoreRepository2.Excercise;
 using DotNetCoreRepository2.MockRepository;
 using Generic;
 using Microsoft.AspNetCore.Builder;

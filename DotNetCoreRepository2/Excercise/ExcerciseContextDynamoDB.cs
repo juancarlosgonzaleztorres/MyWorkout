@@ -9,16 +9,16 @@ using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace DotNetCoreRepository2
+namespace DotNetCoreRepository2.Excercise
 {
-    public sealed class ExcerciseRepositoryDynamoDB:ICRUD<Core.Excercise>, System.IDisposable
+    public sealed class ExcerciseRepositoryDynamoDB : ICRUD<Core.Excercise>, System.IDisposable
     {
         private const string Excercises = "Excercises";
         DynamoDBContext context;
         //AmazonDynamoDBClient client;
         public ExcerciseRepositoryDynamoDB(IAmazonDynamoDB client)
         {
-            
+
         }
 
         public async Task<int> CreateAsync(Core.Excercise item)
@@ -66,8 +66,8 @@ namespace DotNetCoreRepository2
                         WriteCapacityUnits = 5
                     },
                 };
-                
-                var response = await client.CreateTableAsync(request,new System.Threading.CancellationToken());
+
+                var response = await client.CreateTableAsync(request, new System.Threading.CancellationToken());
             }
 
             Table excerciseCatalog = Table.LoadTable(client, Excercises);

@@ -1,7 +1,7 @@
 ﻿using Core;
 using Microsoft.EntityFrameworkCore;
 
-namespace DotNetCoreRepository2
+namespace DotNetCoreRepository2.Excercise
 {
     public class EntityFrameworkSQLiteExcerciseContext : DbContext
     {

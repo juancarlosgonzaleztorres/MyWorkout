@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XUnitTests", "XUnitTests\XU
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DotNetCore", "DotNetCore", "{1BB85D55-5449-42D6-8FD2-98F685BC4C0A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExcerciseApi", "ExcerciseApi\ExcerciseApi.csproj", "{4DA4A3BA-4A2F-4614-B840-B0CC291ED984}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWorkoutAPI", "ExcerciseApi\MyWorkoutAPI.csproj", "{4DA4A3BA-4A2F-4614-B840-B0CC291ED984}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNetCoreRepository2", "DotNetCoreRepository2\DotNetCoreRepository2.csproj", "{7082CC08-2B18-475B-9FDC-8B137C7410BD}"
 EndProject
@@ -31,8 +31,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docs", "Docs", "{44BBF58C-8
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Spikes", "Spikes", "{F6F6904F-BE68-4819-900E-41B4CF20D6E4}"
-EndProject
-Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "Database1", "..\..\Database1\Database1.sqlproj", "{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Generic", "BusinessLogic\Generic\Generic.csproj", "{DA83C046-672E-47C6-9DFA-E1E1B52E15A1}"
 EndProject
@@ -58,12 +56,6 @@ Global
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7082CC08-2B18-475B-9FDC-8B137C7410BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C1E9D862-CF58-4AFC-B79C-1E38EE9F2749}.Release|Any CPU.Deploy.0 = Release|Any CPU
 		{DA83C046-672E-47C6-9DFA-E1E1B52E15A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DA83C046-672E-47C6-9DFA-E1E1B52E15A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA83C046-672E-47C6-9DFA-E1E1B52E15A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
