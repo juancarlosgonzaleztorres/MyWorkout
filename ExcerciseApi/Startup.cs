@@ -2,6 +2,7 @@
 using Core;
 using DotNetCoreRepository2.Excercise;
 using DotNetCoreRepository2.MockRepository;
+using DotNetCoreRepository2.Models;
 using Generic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -26,11 +27,16 @@ namespace ExcerciseApi
         public void ConfigureServices(IServiceCollection services)
         {
             //Test Excercise API with Entity Framework
-            services.AddSingleton<DbContext, EntityFrameworkSQLiteExcerciseContext>();
+            //services.AddSingleton<DbContext, EntityFrameworkSQLiteExcerciseContext>();
             //services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepository>();
-            
+            //services.AddDbContext<MyWorkoutContext>(
+            //        options => options.UseSqlServer("Data Source=corsair;Initial Catalog=MyWorkout;Integrated Security=True"));
+            services.AddSingleton<ICRUD<Core.Excercise>, EFExcerciseRepository>();
+            services.AddSingleton<DbContext, MyWorkoutContext>();
+
             //Test Excercise API in isolation
-            services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDummyData>();
+            //services.AddSingleton<ICRUD<Core.Excercise>, ExcerciseRepositoryDummyData>();
+            //services.AddSingleton<ICRUD<Excercise>, ExcerciseRepository>();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddAWSService<IAmazonDynamoDB>();
             //services.AddAWSService<IAmazonDynamoDB>();
